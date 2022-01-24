@@ -1,0 +1,12 @@
+@import "_variables";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.App {
+	background-color: $clr-bg;
+	font-family: $font;
+	height: 100vh;
+}

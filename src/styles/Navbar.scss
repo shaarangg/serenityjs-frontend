@@ -1,0 +1,26 @@
+@import "_variables";
+.nav {
+	display: flex;
+	justify-content: space-around;
+	.nav-head {
+		display: flex;
+		width: 100vw;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.nav-center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			margin: 0.8rem;
+		}
+	}
+	.nav-end {
+		align-self: center;
+	}
+}
+.logo {
+	color: $clr-secondary;
+	font-size: 1.5rem;
+}
