@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../styles/Navbar.scss";
+import "./Navbar.scss";
 import { GoThreeBars } from "react-icons/go";
 function Navbar() {
 	const [showLinks, setShowLinks] = useState(false);
