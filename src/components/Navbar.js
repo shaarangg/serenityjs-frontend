@@ -3,22 +3,21 @@ import "../styles/Navbar.scss";
 import { GoThreeBars } from "react-icons/go";
 function Navbar() {
 	const [showLinks, setShowLinks] = useState(false);
-	const linkContainerRef = useRef(null);
-	const linksRef = useRef(null);
-	// useEffect(() => {
-	// 	if (showLinks) {
-	// 		const linkHeight = linksRef.current.getBoundingClientRect().height;
-	// 		console.log(linkHeight);
-	// 		linkContainerRef.current.style.height = `${linkHeight}px`;
-	// 	} else {
-	// 		linkContainerRef.current.style.height = "0px";
-	// 	}
-	// }, [showLinks]);
+	const navCenterContainer = useRef(null);
+	useEffect(() => {
+		if (showLinks) {
+			navCenterContainer.current.style.height = `100vh`;
+		} else {
+			navCenterContainer.current.style.height = "0px";
+		}
+	}, [showLinks]);
 	return (
 		<div className="container">
 			<nav className="nav">
 				<div className="nav-head">
-					<p className="logo">Serenity.js</p>
+					<a href="/" className="logo">
+						Serenity.js
+					</a>
 					<button
 						className="nav-toggle"
 						onClick={() => {
@@ -28,13 +27,16 @@ function Navbar() {
 						<GoThreeBars />
 					</button>
 				</div>
-				<div className="nav-center">
-					<a href="">Home</a>
-					<a href="">Documentation</a>
-					<a href="">Contact Us</a>
+				<div className="nav-center" ref={navCenterContainer}>
+					<a href="/">Home</a>
+					<a href="/docs">Documentation</a>
+					<a href="/contact">Contact Us</a>
+					<a href="/api" className="toggle-nav-end">
+						Test API
+					</a>
 				</div>
 				<div className="nav-end">
-					<a href="">Test API</a>
+					<a href="/api">Test API</a>
 				</div>
 			</nav>
 		</div>

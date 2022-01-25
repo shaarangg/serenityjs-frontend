@@ -5,7 +5,12 @@
 	width: 100vw;
 	.logo {
 		color: $clr-secondary;
-		font-size: 1.5rem;
+		font-size: 2rem;
+		font-family: $logo-font;
+		font-weight: 600;
+	}
+	.logo:hover {
+		color: $clr-primary;
 	}
 	.nav-head {
 		display: flex;
@@ -26,6 +31,33 @@
 	.nav-center {
 		height: 0;
 		overflow: hidden;
+		display: flex;
+		flex-flow: column;
+		align-items: flex-start;
+		a {
+			padding: 1.75rem 1rem;
+			letter-spacing: 1px;
+			color: $clr-primary;
+			font-weight: 500;
+			font-size: 1.25rem;
+			transition-duration: 0ms;
+			&:hover {
+				color: $clr-secondary;
+			}
+		}
+		.toggle-nav-end {
+			background-color: $clr-secondary;
+			margin: 1.75rem 0;
+			margin-left: 1rem;
+			padding: 0.5rem 1rem;
+			font-weight: 600;
+			border-radius: 2px;
+			font-size: 1.25rem;
+			color: $clr-btn;
+			&:hover {
+				color: $clr-btn;
+			}
+		}
 	}
 	.nav-end {
 		display: none;
@@ -45,18 +77,23 @@
 			display: none;
 		}
 		.nav-center {
-			height: auto;
-			display: flex;
+			height: auto !important;
+			flex-flow: row;
+			background-color: transparent;
 			a {
 				padding: 0 2rem;
 				letter-spacing: 1px;
 				color: $clr-primary;
 				font-weight: 500;
 			}
+			.toggle-nav-end {
+				display: none;
+			}
 		}
 		.nav-end {
-			display: block;
+			display: inline-block;
 			padding: 1.5rem 1rem;
+			transition-duration: 0ms;
 			a {
 				background-color: $clr-secondary;
 				padding: 0.5rem 1rem;
@@ -64,6 +101,10 @@
 				border-radius: 2px;
 				font-size: 1.25rem;
 				color: $clr-btn;
+			}
+			transform: translate(-1px, -1px);
+			&:hover {
+				transform: translate(1px, 1px);
 			}
 		}
 	}
