@@ -1,9 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.scss";
 import { GoThreeBars } from "react-icons/go";
+import { NavLink, Link } from "react-router-dom";
 function Navbar() {
 	const [showLinks, setShowLinks] = useState(false);
 	const navCenterContainer = useRef(null);
+	const activeStyle = ({ isActive }) => {
+		return {
+			color: isActive ? "#f3a4cc" : "",
+		};
+	};
 	useEffect(() => {
 		if (showLinks) {
 			navCenterContainer.current.style.height = `100vh`;
@@ -11,6 +17,7 @@ function Navbar() {
 			navCenterContainer.current.style.height = "0px";
 		}
 	}, [showLinks]);
+
 	return (
 		<div className="container">
 			<nav className="nav">
@@ -28,12 +35,18 @@ function Navbar() {
 					</button>
 				</div>
 				<div className="nav-center" ref={navCenterContainer}>
-					<a href="/">Home</a>
-					<a href="/docs">Documentation</a>
-					<a href="/contact">Contact Us</a>
-					<a href="/api" className="toggle-nav-end">
-						Test API
-					</a>
+					<NavLink to="/" style={activeStyle}>
+						Home
+					</NavLink>
+					<NavLink to="/docs" style={activeStyle}>
+						Documentation
+					</NavLink>
+					<NavLink to="/contact" style={activeStyle}>
+						Contact Us
+					</NavLink>
+					<Link to="/api" className="toggle-nav-end">
+						Test Api
+					</Link>
 				</div>
 				<div className="nav-end">
 					<a href="/api">Test API</a>
