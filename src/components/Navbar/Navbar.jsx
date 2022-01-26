@@ -22,9 +22,9 @@ function Navbar() {
 		<div className="container">
 			<nav className="nav">
 				<div className="nav-head">
-					<a href="/" className="logo">
+					<Link to="/" className="logo">
 						Serenity.js
-					</a>
+					</Link>
 					<button
 						className="nav-toggle"
 						onClick={() => {
