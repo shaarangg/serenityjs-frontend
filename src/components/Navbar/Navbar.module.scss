@@ -12,13 +12,13 @@
 	.logo:hover {
 		color: $clr-primary;
 	}
-	.nav-head {
+	.navHead {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		padding: 1.5rem 1rem;
 	}
-	.nav-toggle {
+	.navToggle {
 		width: 24px;
 		height: 24px;
 		font-size: 1.5rem;
@@ -28,7 +28,7 @@
 		cursor: pointer;
 		color: $clr-primary;
 	}
-	.nav-center {
+	.navCenter {
 		height: 0;
 		overflow: hidden;
 		display: flex;
@@ -44,7 +44,7 @@
 				color: $clr-secondary;
 			}
 		}
-		.toggle-nav-end {
+		.toggleNavEnd {
 			background-color: $clr-secondary;
 			margin: 1.75rem 0;
 			margin-left: 1rem;
@@ -58,7 +58,7 @@
 			}
 		}
 	}
-	.nav-end {
+	.navEnd {
 		display: none;
 	}
 }
@@ -72,10 +72,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		.nav-toggle {
+		.navToggle {
 			display: none;
 		}
-		.nav-center {
+		.navCenter {
 			height: auto !important;
 			flex-flow: row;
 			background-color: transparent;
@@ -85,11 +85,11 @@
 				color: $clr-primary;
 				font-weight: 500;
 			}
-			.toggle-nav-end {
+			.toggleNavEnd {
 				display: none;
 			}
 		}
-		.nav-end {
+		.navEnd {
 			display: inline-block;
 			padding: 1.5rem 1rem;
 			transition-duration: 0ms;

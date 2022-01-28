@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Navbar.scss";
+import styles from "./Navbar.module.scss";
 import { GoThreeBars } from "react-icons/go";
 import { NavLink, Link } from "react-router-dom";
 function Navbar() {
@@ -19,14 +19,14 @@ function Navbar() {
 	}, [showLinks]);
 
 	return (
-		<div className="container">
-			<nav className="nav">
-				<div className="nav-head">
-					<Link to="/" className="logo">
+		<div className={styles.container}>
+			<nav className={styles.nav}>
+				<div className={styles.navHead}>
+					<Link to="/" className={styles.logo}>
 						Serenity.js
 					</Link>
 					<button
-						className="nav-toggle"
+						className={styles.navToggle}
 						onClick={() => {
 							setShowLinks(!showLinks);
 						}}
@@ -34,7 +34,7 @@ function Navbar() {
 						<GoThreeBars />
 					</button>
 				</div>
-				<div className="nav-center" ref={navCenterContainer}>
+				<div className={styles.navCenter} ref={navCenterContainer}>
 					<NavLink to="/" style={activeStyle}>
 						Home
 					</NavLink>
@@ -44,11 +44,11 @@ function Navbar() {
 					<NavLink to="/contact" style={activeStyle}>
 						Contact Us
 					</NavLink>
-					<Link to="/api" className="toggle-nav-end">
+					<Link to="/api" className={styles.toggleNavEnd}>
 						Test Api
 					</Link>
 				</div>
-				<div className="nav-end">
+				<div className={styles.navEnd}>
 					<a href="/api">Test API</a>
 				</div>
 			</nav>
