@@ -8,7 +8,9 @@
 	color: $clr-primary;
 }
 .App {
-	background-color: $clr-bg;
 	font-family: $font;
 	height: 100vh;
+}
+html {
+	background-color: $clr-bg;
 }
