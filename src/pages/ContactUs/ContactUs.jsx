@@ -11,24 +11,29 @@ function ContactUs() {
 			</div>
 			<form className={styles.wrapper}>
 				<div className={styles.inputContainer}>
-					<label htmlFor="">Name</label>
-					<input type="text" placeholder="Elon Musk" />
+					<label htmlFor="name">Name</label>
+					<input id="name" type="text" placeholder="Elon Musk" />
 				</div>
 				<div className={styles.inputContainer}>
-					<label htmlFor="">Designation</label>
-					<input type="text" placeholder="CEO" />
+					<label htmlFor="designation">Designation</label>
+					<input id="designation" type="text" placeholder="CEO" />
 				</div>
 				<div className={styles.inputContainer}>
-					<label htmlFor="">Email</label>
-					<input type="text" placeholder="name@organization.com" />
+					<label htmlFor="email">Email</label>
+					<input id="email" type="text" placeholder="name@organization.com" />
 				</div>
 				<div className={styles.inputContainer}>
-					<label htmlFor="">Phone number</label>
-					<input type="text" placeholder="+1 999 999 9999" />
+					<label htmlFor="phno">Phone number</label>
+					<input id="phno" type="text" placeholder="+1 999 999 9999" />
 				</div>
-				<div className={styles.inputContainer}>
-					<label htmlFor="">How can we help you?</label>
-					<input type="text" placeholder="Enter your query" />
+				<div className={`${styles.inputContainer} ${styles.textAreaContainer}`}>
+					<label htmlFor="content">How can we help you?</label>
+					<textarea
+						id="content"
+						cols="30"
+						rows="5"
+						placeholder="Jot down your query here"
+					></textarea>
 				</div>
 				<button type="submit" className={styles.btn}>
 					Submit
