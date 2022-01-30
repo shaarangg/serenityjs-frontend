@@ -1,3 +1,95 @@
+@import "../../variables";
+.container {
+	position: absolute;
+	top: 7rem;
+}
 .title {
-	font-size: 10rem;
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: 1000;
+}
+.content {
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	padding: 1.5rem 1rem;
+}
+.btnContainer {
+	display: flex;
+	gap: 1.5rem;
+	flex-flow: column;
+	align-items: center;
+}
+.Docsbtn {
+	width: 200px;
+	padding: 1rem 2rem;
+	border-radius: $radius;
+	border: none;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: $clr-btn;
+	background-color: $clr-secondary;
+	box-shadow: $darkShadow;
+	margin-top: 1rem;
+}
+.Apibtn {
+	width: 200px;
+	padding: 1rem 2rem;
+	border-radius: $radius;
+	border: none;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: $clr-primary;
+	background-color: $clr-nav;
+	box-shadow: $darkShadow;
+}
+
+@media screen and (min-width: 900px) {
+	.container {
+		max-width: 1140px;
+		position: relative;
+		margin: auto;
+	}
+	.title {
+		font-size: 5rem;
+		text-align: center;
+		font-weight: 1000;
+	}
+	.content {
+		margin-top: 1rem;
+		text-align: center;
+		font-size: 0.875rem;
+		line-height: 1.5rem;
+		padding: 1.5rem 1rem;
+	}
+	.btnContainer {
+		display: flex;
+		gap: 1.5rem;
+		flex-flow: column;
+		align-items: center;
+	}
+	.Docsbtn {
+		width: 200px;
+		padding: 1rem 2rem;
+		border-radius: $radius;
+		border: none;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: $clr-btn;
+		background-color: $clr-secondary;
+		box-shadow: $darkShadow;
+		margin-top: 1rem;
+	}
+	.Apibtn {
+		width: 200px;
+		padding: 1rem 2rem;
+		border-radius: $radius;
+		border: none;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: $clr-primary;
+		background-color: $clr-nav;
+		box-shadow: $darkShadow;
+	}
 }
