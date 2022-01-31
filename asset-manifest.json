@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/serenityjsFrontend/static/css/main.0b7a04c6.css",
+    "main.js": "/serenityjsFrontend/static/js/main.6774948f.js",
+    "index.html": "/serenityjsFrontend/index.html",
+    "main.0b7a04c6.css.map": "/serenityjsFrontend/static/css/main.0b7a04c6.css.map",
+    "main.6774948f.js.map": "/serenityjsFrontend/static/js/main.6774948f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b7a04c6.css",
+    "static/js/main.6774948f.js"
+  ]
+}
