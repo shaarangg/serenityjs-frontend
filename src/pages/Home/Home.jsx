@@ -4,7 +4,7 @@ function Home() {
 	return (
 		<div className={styles.container}>
 			<div className={styles.head}>
-				<div className={styles.title}>The React Framework for Production</div>
+				<div className={styles.title}>Authentic, Distinctive, Convenient. </div>
 				<p className={styles.content}>
 					Sernity.js aims to tackle the problem in social media platforms where it uses the power of
 					Natural Language Processing to detect and correct racism as well as all forms of
