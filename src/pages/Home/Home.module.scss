@@ -32,6 +32,7 @@
 	background-color: $clr-secondary;
 	box-shadow: $pinkShadow;
 	margin-top: 1rem;
+	cursor: pointer;
 }
 .Apibtn {
 	width: 200px;
@@ -43,6 +44,7 @@
 	color: $clr-primary;
 	background-color: $clr-nav;
 	box-shadow: $darkShadow;
+	cursor: pointer;
 }
 
 @media screen and (min-width: 900px) {

@@ -41,6 +41,7 @@
 			color: $clr-primary;
 			font-weight: 500;
 			font-size: 1.25rem;
+			cursor: pointer;
 			&:hover {
 				color: $clr-secondary;
 			}
@@ -96,6 +97,7 @@
 			display: inline-block;
 			padding: 1.5rem 1rem;
 			transition-duration: 0ms;
+			cursor: pointer;
 			a {
 				background-color: $clr-secondary;
 				padding: 0.5rem 1rem;
