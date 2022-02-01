@@ -1,3 +1,87 @@
+@import "../../variables";
 .container {
 	transform: translateY(100px);
+	// display: grid;
+	// grid-template-columns: 1fr 2fr;
+	margin: 0rem 1rem;
+}
+.start {
+	margin: 2rem 0;
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+	p {
+		margin-bottom: 1.5rem;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+.about {
+	margin: 4rem 0rem 2rem 0rem;
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+	p {
+		margin-bottom: 1.5rem;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+.headingWithList {
+	h2 {
+		font-size: 1.75rem;
+		margin: 3rem 0rem 1.5rem 0rem;
+	}
+	li {
+		// top right bottom left
+		margin: 0rem 0rem 1rem 1.5rem;
+		list-style-type: none;
+	}
+	li::before {
+		content: "-";
+		position: absolute;
+		margin-left: -1rem;
+	}
+	a {
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+.route {
+	h2 {
+		font-size: 1.75rem;
+		margin: 3rem 0rem 1.5rem 0rem;
+	}
+	table {
+		border: 1px solid $clr-primary;
+		border-collapse: collapse;
+		th {
+			border: 1px solid $clr-primary;
+			padding: 0.75rem 0.5rem;
+		}
+		td {
+			font-size: 0.75rem;
+			padding: 0.75rem 0.5rem;
+			line-height: 17px;
+			border: 1px solid $clr-primary;
+		}
+	}
+}
+.setup {
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
+}
+.testing {
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+	}
 }
