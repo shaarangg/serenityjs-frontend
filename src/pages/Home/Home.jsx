@@ -12,12 +12,12 @@ function Home() {
 				call detection of hate speech in the input text.
 			</p>
 			<div className={styles.btnContainer}>
-				<button type="button" className={styles.Docsbtn}>
-					<Link to="/docs">Start Learning</Link>
-				</button>
-				<button type="button" className={styles.Apibtn}>
-					<Link to="/api">Test API</Link>
-				</button>
+				<Link to="/docs" className={styles.Docsbtn}>
+					Start Learning
+				</Link>
+				<Link to="/api" className={styles.Apibtn}>
+					Test API
+				</Link>
 			</div>
 		</div>
 	);

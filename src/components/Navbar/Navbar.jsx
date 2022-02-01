@@ -49,7 +49,7 @@ function Navbar() {
 					</Link>
 				</div>
 				<div className={styles.navEnd}>
-					<Link to="/api">Test Api</Link>
+					<Link to="/api">Test API</Link>
 				</div>
 			</nav>
 		</div>

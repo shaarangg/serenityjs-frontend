@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Contact.module.scss";
 function ContactUs() {
+	const [person, setPerson] = useState({
+		name: "",
+		designation: "",
+		email: "",
+		phno: "",
+		content: "",
+	});
 	return (
 		<div className={styles.container}>
 			<div className={styles.head}>
