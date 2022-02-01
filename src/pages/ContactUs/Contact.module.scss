@@ -65,6 +65,16 @@
 	color: $clr-btn;
 	margin: 1rem 0;
 	cursor: pointer;
+	transform: translate(-1px, -1px);
+	transition-duration: 0ms;
+	cursor: pointer;
+	&:disabled {
+		cursor: not-allowed;
+		// pointer-events: none;
+	}
+	&:active {
+		transform: translate(1px, 1px);
+	}
 }
 
 @media screen and (min-width: 760px) {
