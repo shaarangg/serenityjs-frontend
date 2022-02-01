@@ -1,0 +1,41 @@
+@import "../../variables";
+.sideToggle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	p {
+		margin-left: 1rem;
+		font-size: 1.15rem;
+	}
+	svg {
+		font-size: 1rem;
+	}
+}
+.list {
+	margin-top: 1rem;
+	border-top: 1px solid $clr-primary;
+	padding: 1rem 0rem;
+	p {
+		font-size: 1.25rem;
+		font-weight: 600;
+	}
+	li {
+		margin: 1.25rem 0;
+		list-style-type: none;
+		margin-left: 1.2rem;
+	}
+	li::before {
+		display: block;
+		content: "";
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		position: absolute;
+		background-color: $clr-primary;
+		margin-left: -1.2rem;
+		margin-top: 0.5rem;
+	}
+}
