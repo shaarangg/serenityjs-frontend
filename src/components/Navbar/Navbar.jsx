@@ -16,8 +16,10 @@ function Navbar() {
 	useEffect(() => {
 		if (showLinks) {
 			navCenterContainer.current.style.height = `100vh`;
+			document.body.style.overflow = "hidden";
 		} else {
 			navCenterContainer.current.style.height = "0px";
+			document.body.style.overflow = "visible";
 		}
 	}, [showLinks]);
 

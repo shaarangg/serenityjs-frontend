@@ -1,12 +1,13 @@
 @import "../../variables";
 .container {
-	transform: translateY(100px);
 	// display: grid;
 	// grid-template-columns: 1fr 2fr;
-	margin: 0rem 1rem;
+	transform: translateY(75px);
 }
 .contentContainer {
+	margin: 0rem 1rem;
 	background-color: $clr-bg;
+	z-index: 2;
 }
 .start {
 	margin: 2rem 0;

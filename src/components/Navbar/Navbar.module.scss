@@ -1,9 +1,14 @@
 @import "../../variables";
+.container {
+	display: flex;
+	justify-content: center;
+}
 .nav {
 	position: fixed;
 	z-index: 100;
 	width: 100vw;
 	background-color: $clr-bg;
+	background-color: red;
 	.logo {
 		color: $clr-secondary;
 		font-size: 1.5rem;
@@ -67,10 +72,6 @@
 @media screen and (min-width: 900px) {
 	.logo {
 		font-size: 2rem;
-	}
-	.container {
-		display: flex;
-		justify-content: center;
 	}
 	.nav {
 		max-width: 1140px;

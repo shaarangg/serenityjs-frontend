@@ -1,15 +1,27 @@
 @import "../../variables";
-.container {
-	z-index: 100;
+.nav {
+	display: block;
+	width: 100vw;
+	top: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	z-index: 200;
+	background-color: $clr-bg;
 }
 .sideToggle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: transparent;
+	background-color: $clr-nav;
+	box-shadow: $darkShadow;
+	padding: 1rem 1rem;
 	border: none;
 	outline: none;
 	cursor: pointer;
+	width: 100%;
+	div {
+		display: flex;
+		width: 80px;
+		justify-content: flex-start;
+		align-items: center;
+	}
 	p {
 		margin-left: 1rem;
 		font-size: 1.15rem;
@@ -19,19 +31,26 @@
 	}
 }
 .list {
-	height: 0px;
+	display: none;
 	overflow: hidden;
-	margin-top: 1rem;
+	position: absolute;
+	z-index: 100;
+	padding: 0rem 1rem;
+	background-color: $clr-bg;
+	width: 100vw;
 	p {
+		margin: 1rem 0;
 		font-size: 1.25rem;
 		font-weight: 600;
 	}
 	li {
-		margin: 1.25rem 0;
+		position: relative;
+		margin: 2rem 0;
 		list-style-type: none;
 		margin-left: 1.2rem;
 	}
-	span {
+	li::before {
+		content: "";
 		width: 4px;
 		height: 4px;
 		border-radius: 50%;
