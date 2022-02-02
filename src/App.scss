@@ -9,8 +9,12 @@
 }
 .App {
 	font-family: $font;
-	height: 100vh;
 }
 html {
 	background-color: $clr-bg;
+}
+@media screen and (min-width: 900px) {
+	body {
+		overflow: visible !important;
+	}
 }
