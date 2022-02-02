@@ -32,31 +32,31 @@ export default function Sidebar() {
 					<p>Documentation</p>
 					<li>
 						<span></span>
-						<a href="">Getting Started</a>
+						<a href="#start">Getting Started</a>
 					</li>
 					<li>
 						<span></span>
-						<a href="">Prerequisites</a>
+						<a href="#preq">Prerequisites</a>
 					</li>
 					<li>
 						<span></span>
-						<a href="">About Serinity.js</a>
+						<a href="#about">About Serinity.js</a>
 					</li>
 					<li>
 						<span></span>
-						<a href="">Built With</a>
+						<a href="#built">Built With</a>
 					</li>
 					<li>
 						<span></span>
-						<a href="">API Routes</a>
+						<a href="#routes">API Routes</a>
 					</li>
 					<li>
 						<span></span>
-						<a href="">Setup</a>
+						<a href="#setup">Setup</a>
 					</li>
 					<li>
 						<span></span>
-						<a href="">Testing</a>
+						<a href="#testing">Testing</a>
 					</li>
 				</ul>
 			</div>

@@ -8,7 +8,7 @@ function Docs() {
 			<Sidebar />
 			<div className={styles.contentContainer}>
 				<section className={styles.start}>
-					<h1>Getting Started</h1>
+					<h1 id="start">Getting Started</h1>
 					<p>Welcome to Serinity.js documentation!</p>
 					<p>
 						If you're new to Serenity.js we recommend you to try our API <Link to="/api">here</Link>
@@ -19,7 +19,7 @@ function Docs() {
 						<Link to="/contact">contact us</Link>.
 					</p>
 					<div className={styles.headingWithList}>
-						<h2>Prerequisites</h2>
+						<h2 id="preq">Prerequisites</h2>
 						<ul>
 							<li>
 								<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
@@ -31,11 +31,11 @@ function Docs() {
 					</div>
 				</section>
 				<section className={styles.about}>
-					<h1>About Serinity.js</h1>
+					<h1 id="about">About Serinity.js</h1>
 					<p>Serenity.js is a REST API that helps you detect racial micro-aggression and abuse.</p>
 					<p>It uses the power of Natural Language Processing to do so.</p>
 					<div className={styles.headingWithList}>
-						<h2>Built With</h2>
+						<h2 id="built">Built With</h2>
 						<ul>
 							<li>
 								<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
@@ -55,27 +55,31 @@ function Docs() {
 						</ul>
 					</div>
 					<div className={styles.route}>
-						<h2>API Routes</h2>
+						<h2 id="routes">API Routes</h2>
 						<table>
-							<tr>
-								<th>Route</th>
-								<th>Description</th>
-							</tr>
-							<tr>
-								<td>/predict</td>
-								<td>
-									Get request on route '/predict' to check whether there are traces of hate speech
-									in an input or not.
-								</td>
-							</tr>
+							<thead>
+								<tr>
+									<th>Route</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>/predict</td>
+									<td>
+										Get request on route '/predict' to check whether there are traces of hate speech
+										in an input or not.
+									</td>
+								</tr>
+							</tbody>
 						</table>
 					</div>
 				</section>
 				<section className={styles.setup}>
-					<h1>Setup</h1>
+					<h1 id="setup">Setup</h1>
 				</section>
 				<section className={styles.testing}>
-					<h1>Testing</h1>
+					<h1 id="testing">Testing</h1>
 				</section>
 			</div>
 		</div>
