@@ -1,4 +1,7 @@
 @import "../../variables";
+.container {
+	z-index: 100;
+}
 .sideToggle {
 	display: flex;
 	justify-content: center;
@@ -6,6 +9,7 @@
 	background-color: transparent;
 	border: none;
 	outline: none;
+	cursor: pointer;
 	p {
 		margin-left: 1rem;
 		font-size: 1.15rem;
@@ -15,9 +19,9 @@
 	}
 }
 .list {
+	height: 0px;
+	overflow: hidden;
 	margin-top: 1rem;
-	border-top: 1px solid $clr-primary;
-	padding: 1rem 0rem;
 	p {
 		font-size: 1.25rem;
 		font-weight: 600;
@@ -27,9 +31,7 @@
 		list-style-type: none;
 		margin-left: 1.2rem;
 	}
-	li::before {
-		display: block;
-		content: "";
+	span {
 		width: 4px;
 		height: 4px;
 		border-radius: 50%;
