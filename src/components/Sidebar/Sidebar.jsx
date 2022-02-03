@@ -32,7 +32,7 @@ export default function Sidebar() {
 					<p>Documentation</p>
 					<li>
 						<span></span>
-						<a href="#start">Getting Started</a>
+						<a href="#preq">Getting Started</a>
 					</li>
 					<li>
 						<span></span>

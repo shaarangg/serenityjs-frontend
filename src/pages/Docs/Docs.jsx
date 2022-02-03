@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Docs.module.scss";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import { Link } from "react-router-dom";
+import CodeSnippet from "../../components/CodeSnippet/CodeSnippet";
 function Docs() {
 	return (
 		<div className={styles.container}>
@@ -77,6 +78,7 @@ function Docs() {
 				</section>
 				<section className={styles.setup}>
 					<h1 id="setup">Setup</h1>
+					<CodeSnippet />
 				</section>
 				<section className={styles.testing}>
 					<h1 id="testing">Testing</h1>
