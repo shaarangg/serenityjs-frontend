@@ -1,14 +1,17 @@
 .container {
-	width: 125px;
+	display: inline-block;
+	position: relative;
 }
 .head {
+	background-color: red;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	padding: 0.5rem;
-	background-color: red;
+	border: none;
+	outline: none;
 	p {
-		margin-right: 0.5rem;
+		text-transform: capitalize;
 	}
 	svg {
 		background-color: transparent;
@@ -16,10 +19,14 @@
 		font-size: 1.2rem;
 	}
 }
-.list {
+.listContainer {
+	width: 100%;
 	position: absolute;
-	width: inherit;
-	text-align: center;
-	background-color: green;
+}
+.list {
+	width: 100px;
 	display: none;
+	text-align: center;
+	margin: auto;
+	background-color: green;
 }
