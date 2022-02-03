@@ -1,9 +1,6 @@
 @import "../../variables";
-.container {
-	transform: translateY(75px);
-}
 .contentContainer {
-	margin: 0rem 1rem;
+	margin: 1rem 1rem;
 	background-color: $clr-bg;
 	z-index: 2;
 }
@@ -92,5 +89,8 @@
 		max-width: 1140px;
 		display: grid;
 		grid-template-columns: 1fr 3fr;
+	}
+	.contentContainer {
+		margin: 0rem 1rem;
 	}
 }

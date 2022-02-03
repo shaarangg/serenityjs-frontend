@@ -1,13 +1,12 @@
 @import "../../variables";
-.container {
-	display: flex;
-	justify-content: center;
-}
 .nav {
-	position: fixed;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
 	z-index: 100;
-	width: 100vw;
+	width: 100%;
 	background-color: $clr-bg;
+	margin: 0 auto;
 	.logo {
 		color: $clr-secondary;
 		font-size: 1.5rem;
@@ -34,7 +33,9 @@
 		color: $clr-primary;
 	}
 	.navCenter {
+		position: absolute;
 		height: 0;
+		width: 100vw;
 		overflow: hidden;
 		display: flex;
 		flex-flow: column;
@@ -81,6 +82,8 @@
 			display: none;
 		}
 		.navCenter {
+			position: static;
+			width: auto !important;
 			height: auto !important;
 			flex-flow: row;
 			background-color: transparent;

@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowDown } from "react-icons/md";
 import styles from "./Sidebar.module.scss";
 export default function Sidebar() {
-	const [showBar, setShowBar] = useState(true);
+	const [showBar, setShowBar] = useState(false);
 	const listRef = useRef(null);
 	useEffect(() => {
 		if (showBar) {

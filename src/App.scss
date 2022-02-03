@@ -1,4 +1,7 @@
 @import "_variables";
+body {
+	height: 100vh;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -7,8 +10,12 @@
 	transition: $transition;
 	color: $clr-primary;
 }
+#root {
+	height: 100%;
+}
 .App {
 	font-family: $font;
+	height: 100%;
 }
 html {
 	background-color: $clr-bg;

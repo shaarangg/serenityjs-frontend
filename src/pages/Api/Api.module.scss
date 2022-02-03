@@ -1,9 +1,8 @@
 @import "../../variables";
 .container {
-	transform: translateY(100px);
 	text-align: center;
 	max-width: 80%;
-	margin: 0 auto;
+	margin: 1.5rem auto;
 	textarea {
 		font-family: $font;
 		width: 100%;
@@ -49,7 +48,6 @@
 	.container {
 		max-width: 1140px;
 		width: 80%;
-		margin: 0 auto;
 		textarea {
 			font-size: 1.5rem;
 			margin-top: 3rem;

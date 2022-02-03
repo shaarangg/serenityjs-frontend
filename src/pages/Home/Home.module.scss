@@ -1,6 +1,6 @@
 @import "../../variables";
 .container {
-	transform: translateY(100px);
+	margin: 1.5rem 0;
 }
 .title {
 	font-size: 2rem;
@@ -50,8 +50,7 @@
 @media screen and (min-width: 700px) {
 	.container {
 		max-width: 1140px;
-		margin: 0 auto;
-		transform: translateY(150px);
+		margin: 5rem auto;
 	}
 	.title {
 		font-size: 5rem;
