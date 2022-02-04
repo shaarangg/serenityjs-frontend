@@ -19,6 +19,9 @@ function Dropdown(props) {
 		<div className={styles.container}>
 			<button
 				className={styles.head}
+				onBlur={() => {
+					setDown(false);
+				}}
 				onClick={() => {
 					setDown(!down);
 				}}
@@ -33,7 +36,7 @@ function Dropdown(props) {
 						return (
 							<div
 								key={idx}
-								onClick={() => {
+								onMouseDown={() => {
 									setIndex(idx);
 									setDown(false);
 								}}

@@ -78,6 +78,7 @@ function Docs() {
 				</section>
 				<section className={styles.setup}>
 					<h1 id="setup">Setup</h1>
+
 					<CodeSnippet />
 				</section>
 			</div>
