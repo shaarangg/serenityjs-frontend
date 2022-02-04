@@ -23,8 +23,8 @@ url = "https://api.myserenity.live/predict"
 payload = {
     "text": "string",
 }
-response = requests.request("POST", url, json=payload)
-print(response.text)`,
+res = requests.request("POST", url, json=payload)
+print(res.text)`,
 	},
 	{
 		lang: "Bash",

@@ -31,28 +31,64 @@ export default function Sidebar() {
 				<ul>
 					<p>Documentation</p>
 					<li>
-						<span></span>
-						<a href="#preq">Getting Started</a>
+						<a
+							href="#preq"
+							onClick={() => {
+								setShowBar(false);
+							}}
+						>
+							Getting Started
+						</a>
 					</li>
 					<li>
-						<span></span>
-						<a href="#preq">Prerequisites</a>
+						<a
+							href="#preq"
+							onClick={() => {
+								setShowBar(false);
+							}}
+						>
+							Prerequisites
+						</a>
 					</li>
 					<li>
-						<span></span>
-						<a href="#about">About Serinity.js</a>
+						<a
+							href="#about"
+							onClick={() => {
+								setShowBar(false);
+							}}
+						>
+							About Serinity.js
+						</a>
 					</li>
 					<li>
-						<span></span>
-						<a href="#built">Built With</a>
+						<a
+							href="#built"
+							onClick={() => {
+								setShowBar(false);
+							}}
+						>
+							Built With
+						</a>
 					</li>
 					<li>
-						<span></span>
-						<a href="#routes">API Routes</a>
+						<a
+							href="#routes"
+							onClick={() => {
+								setShowBar(false);
+							}}
+						>
+							API Routes
+						</a>
 					</li>
 					<li>
-						<span></span>
-						<a href="#setup">Setup</a>
+						<a
+							href="#setup"
+							onClick={() => {
+								setShowBar(false);
+							}}
+						>
+							Setup
+						</a>
 					</li>
 				</ul>
 			</div>

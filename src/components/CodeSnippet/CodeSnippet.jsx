@@ -8,10 +8,10 @@ function CodeSnippet() {
 	const [index, setIndex] = useState(0);
 	const { value, code } = languages[index];
 	const resp = `{
-	data: '"Normal Comment"
-	status: 200
-	headers: {content-type: 'text/html; charset=utf-8'}
-	statusText: ""
+   data: '"Normal Comment"
+   status: 200
+   headers: {content-type: 'text/html; charset=utf-8'}
+   statusText: ""
 }`;
 	return (
 		<div className={styles.container}>
