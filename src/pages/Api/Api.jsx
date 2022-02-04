@@ -10,6 +10,7 @@ function Api() {
 		const res = await axios.post("https://api.myserenity.live/predict", {
 			text: textRef.current.value,
 		});
+		console.log(res);
 		setStatus(res.data);
 		setDisabled(false);
 	};

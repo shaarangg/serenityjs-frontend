@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useRef } from "react";
-import languages from "../../data";
 import styles from "./Dropdown.module.scss";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-function Dropdown() {
+function Dropdown(props) {
 	const [down, setDown] = useState(false);
 	const dropListRef = useRef(null);
-	const [dispLang, setDispLang] = useState("javascript");
+	const { index, setIndex, languages } = props;
+	const { value } = languages[index];
 
 	useEffect(() => {
 		if (down) {
@@ -23,18 +23,19 @@ function Dropdown() {
 					setDown(!down);
 				}}
 			>
-				<p>Request Sample: {dispLang}</p>
+				<p>Request Sample: {value}</p>
 				<MdOutlineArrowDropDown />
 			</button>
 			<div className={styles.listContainer}>
 				<div className={styles.list} ref={dropListRef}>
-					{languages.map((language, index) => {
-						const { lang, value } = language;
+					{languages.map((language, idx) => {
+						const { lang } = language;
 						return (
 							<div
-								key={index}
+								key={idx}
 								onClick={() => {
-									setDispLang(value);
+									setIndex(idx);
+									setDown(false);
 								}}
 							>
 								{lang}

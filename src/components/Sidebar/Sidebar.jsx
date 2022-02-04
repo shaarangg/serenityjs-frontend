@@ -54,10 +54,6 @@ export default function Sidebar() {
 						<span></span>
 						<a href="#setup">Setup</a>
 					</li>
-					<li>
-						<span></span>
-						<a href="#testing">Testing</a>
-					</li>
 				</ul>
 			</div>
 		</nav>

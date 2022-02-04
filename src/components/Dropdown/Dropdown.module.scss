@@ -3,13 +3,16 @@
 	position: relative;
 }
 .head {
-	background-color: red;
 	display: flex;
+	background-color: transparent;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 0.5rem;
+	padding: 0.3rem;
+	padding-right: 0rem;
+	border-radius: 2px;
 	border: none;
 	outline: none;
+	transition-duration: 0ms;
 	p {
 		text-transform: capitalize;
 	}
@@ -17,6 +20,12 @@
 		background-color: transparent;
 		border: none;
 		font-size: 1.2rem;
+	}
+	&:hover {
+		background-color: #00213a;
+	}
+	&:focus-within {
+		background-color: #000b12;
 	}
 }
 .listContainer {
@@ -28,5 +37,5 @@
 	display: none;
 	text-align: center;
 	margin: auto;
-	background-color: green;
+	background-color: #000b12;
 }

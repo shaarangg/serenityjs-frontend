@@ -1,3 +1,28 @@
 .highlight {
-	min-height: 400px;
+	padding: 0rem 1rem 1rem 1rem !important;
+	transition-duration: 0ms;
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1rem;
+	background-color: rgb(1 22 39);
+	// background-color: ;
+	border-radius: 3px 3px 0px 0px;
+	font-size: 0.9rem;
+}
+.code {
+	max-width: 500px;
+	margin-bottom: 1rem;
+}
+.resp {
+	max-width: 500px;
+}
+@media screen and (min-width: 900px) {
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
 }

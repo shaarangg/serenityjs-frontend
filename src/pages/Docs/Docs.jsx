@@ -80,9 +80,6 @@ function Docs() {
 					<h1 id="setup">Setup</h1>
 					<CodeSnippet />
 				</section>
-				<section className={styles.testing}>
-					<h1 id="testing">Testing</h1>
-				</section>
 			</div>
 		</div>
 	);
